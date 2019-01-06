@@ -1,0 +1,41 @@
+<ons-page id="splitter">
+    <ons-splitter>
+        <ons-splitter-side id="menu" side="left" width="300px" collapse swipeable>
+            <ons-page>
+                <ons-list>
+                    <ons-list-item class="menu-banner">
+                        <figure class="menu-banner-image">
+                            <img src="images/logo.png">
+                        </figure>
+                        <h3 class="localization">Dutch House of Representatives Polls</h3>
+                        <p><span class="localization">Last updated</span> <span class="timeago"></span> <span class="localization">ago</span></p>
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('views/latest.html')" tappable>
+                        <ons-icon icon="md-chart"></ons-icon>&nbsp; <span class="localization">Latest polls</span> 
+                    </ons-list-item>
+                    <ons-list-header>Trends</ons-list-header>
+                    <ons-list-item onclick="fn.load('views/trend-month.html')" tappable>
+                        <ons-icon icon="fa-line-chart"></ons-icon>&nbsp; <span class="localization">Month</span>
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('views/trend-quarter.html')" tappable>
+                        <ons-icon icon="fa-line-chart"></ons-icon>&nbsp; <span class="localization">Quarter</span>
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('views/trend-year.html')" tappable>
+                        <ons-icon icon="fa-line-chart"></ons-icon>&nbsp; <span class="localization">Year</span>
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('views/trend-all.html')" tappable>
+                        <ons-icon icon="fa-line-chart"></ons-icon>&nbsp; <span class="localization">Since</span>&nbsp;<span id="splitterTrendAll"></span>
+                    </ons-list-item>
+                    <ons-list-header>Other</ons-list-header>
+                    <ons-list-item onclick="fn.load('views/about.html')" tappable>
+                        <ons-icon icon="md-settings"></ons-icon>&nbsp; Settings
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('views/about.html')" tappable>
+                        <ons-icon icon="md-help"></ons-icon>&nbsp; <span class="localization">About</span>
+                    </ons-list-item>
+                </ons-list>
+            </ons-page>
+        </ons-splitter-side>
+        <ons-splitter-content id="content" page="views/latest.html"></ons-splitter-content>
+    </ons-splitter>
+</ons-page>
