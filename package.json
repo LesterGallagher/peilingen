@@ -1,0 +1,70 @@
+{
+  "name": "amsterdam_public_toilets",
+  "description": "",
+  "version": "1.2.0",
+  "author": "Sem Postma",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "keysigning": "node scripts/keystore.js",
+    "gh-pages": "git subtree push --prefix platforms/browser/www gh-pages master",
+    "start": "cordova run browser -- --live-reload",
+    "build-browser": "gulp transpile && cordova build browser --release && node scripts/cordova_config_relative_fix.js",
+    "rollout": "npm run build-browser && git add . && git commit -m \"prod\" && git push && npm run gh-pages"
+  },
+  "cordova": {
+    "platforms": [
+      "android",
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-browsersync": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-extension": {},
+      "cordova-plugin-admobpro": {
+        "PLAY_SERVICES_VERSION": "16.0.0"
+      },
+      "cordova-plugin-headercolor": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-splashscreen": {}
+    }
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "cheerio": "^0.19.0",
+    "cordova-android": "^7.1.4",
+    "cordova-browser": "^5.0.4",
+    "cordova-plugin-admobpro": "^2.35.3",
+    "cordova-plugin-browsersync": "^1.1.0",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-dialogs": "^2.0.1",
+    "cordova-plugin-extension": "^1.5.4",
+    "cordova-plugin-headercolor": "^1.0.0",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "csp-parse": "0.0.2",
+    "elementtree": "^0.1.7",
+    "glob": "^5.0.15",
+    "npm": "^2.15.12",
+    "plist": "^1.2.0",
+    "q": "^1.5.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "cssnano": "^4.0.5",
+    "google-closure-compiler": "^20180716.0.1",
+    "gulp": "^3.9.1",
+    "gulp-add-src": "^1.0.0",
+    "gulp-babel": "^6.1.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "^3.0.8",
+    "imagemin-jpeg-recompress": "^5.1.0"
+  }
+}

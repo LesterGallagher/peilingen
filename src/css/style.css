@@ -1,0 +1,163 @@
+html,
+body {
+    position: fixed;
+    overflow: hidden;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+ons-toolbar.toolbar {
+    background-image: linear-gradient(0deg, rgb(44, 58, 58), rgb(60, 102, 102) 100%)
+}
+
+.abs-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.responsive {
+    float: left;
+    max-width: 100%;
+}
+
+.list-item__center {
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#news-list-lazy-repeat .overflow-ellipsis {
+    max-width: 100%;
+    display: block;
+    padding-right: 50px;
+}
+
+ons-toolbar.toolbar {
+    background-image: linear-gradient(0deg, rgba(134, 139, 145, 0.419), rgba(172, 179, 186, 0.692) 100%);
+}
+
+ons-search-input {
+    width: 100%;
+}
+
+ons-search-input .search-input {
+    border-radius: 0;
+}
+
+.list-item--material__left {
+    min-width: 32px;
+}
+
+/* News page */
+
+#news-page .subtitle-description p {
+    margin-top: 0;
+}
+
+#news-page .subtitle-description p:last-of-type {
+    margin-bottom: 0;
+}
+
+#nnews-list-lazy-repeat .list-item {
+    height: 100px;
+}
+
+#about-page img {
+    max-width: calc(100vw - 120px);
+    border-radius: 8px;
+}
+
+.clearfix {
+    height: 1px;
+    clear: both;
+}
+
+.user-select-text {
+    user-select: text;
+}
+
+.user-select-text * {
+    user-select: text;
+}
+
+.legend-colors {
+    text-align: center;
+}
+
+.legend-colors div {
+    display: inline-block;
+    width: 60px;
+    border-width: 4px;
+    border-style: solid;
+    margin: 4px;
+}
+
+
+.relative {
+    position: relative;
+}
+
+.ct-tooltip .chartist-tooltip-value {
+    display: none;
+}
+
+.chart-page .page__content {
+    overflow-x: hidden;
+}
+
+.legend-table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.legend-table th,
+.legend-table td {
+    text-align: center;
+}
+
+#donut-chart .ct-label {
+    fill: #fff;
+}
+
+#donut-chart-seats .ct-label {
+    fill: #fff;
+}
+
+.menu-banner {
+    background: #61bfaf;
+    color: #fff;
+    height: 240px;
+}
+
+.menu-banner * {
+    margin: 0;
+}
+
+.menu-banner .menu-banner-image {
+    height: 100px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0;
+    /* margin-top: auto; */
+    /* margin-bottom: 5px; */
+}
+
+.menu-banner .menu-banner-image img {
+    width: 70px;
+    height: 70px;
+}
