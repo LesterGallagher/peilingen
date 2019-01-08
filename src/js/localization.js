@@ -243,7 +243,7 @@ function doLocalizationOnPageInit(event) {
         element.innerText = _(element.innerText);
     });
     event.target.querySelectorAll('.ons-tabbar-localization').forEach(function(element) {
-        element.querySelectorAll('.tabbar__label', function(tabbarLabel) {
+        element.querySelectorAll('.tabbar__label').forEach(function(tabbarLabel) {
             tabbarLabel.innerText = _(tabbarLabel.innerText);
         });
     });

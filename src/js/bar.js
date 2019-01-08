@@ -55,9 +55,9 @@ function initBarPage(event) {
                         class: "ct-tooltip"
                     }),
                     Chartist.plugins.ctAccessibility({
-                        caption: 'Polls, ' + percentage.Date, // localization
-                        seriesHeader: 'Rating', // localization
-                        summary: 'A graphic that shows dutch polls at ' + percentage.Date, // localization
+                        caption: _('Polls') + ', ' + percentage.Date, // localization
+                        seriesHeader: _('Rating'), // localization
+                        summary: _('A graph that shows dutch polls at') + ' ' + percentage.Date, // localization
                         valueTransform: function (value) {
                             return value + '%';
                         },
@@ -138,9 +138,9 @@ function initBarSeatsPage(event) {
                         class: "ct-tooltip-2"
                     }),
                     Chartist.plugins.ctAccessibility({
-                        caption: 'Polls, ' + seats.Date, // localization
-                        seriesHeader: 'Rating', // localization
-                        summary: 'A graphic that shows dutch polls at ' + seats.Date, // localization
+                        caption: _('Polls') + ', ' + seats.Date, // localization
+                        seriesHeader: _('Rating'), // localization
+                        summary: _('A graph that shows dutch polls at') + ' ' + seats.Date, // localization
                         valueTransform: function (value) {
                             return value + '%';
                         },

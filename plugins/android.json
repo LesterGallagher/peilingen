@@ -7,10 +7,11 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-browsersync": {
+    "cordova-plugin-admobpro": {
+      "PLAY_SERVICES_VERSION": "16.0.0",
       "PACKAGE_NAME": "com.EchoSierraStudio.Peilingen"
     },
-    "cordova-plugin-whitelist": {
+    "cordova-plugin-browsersync": {
       "PACKAGE_NAME": "com.EchoSierraStudio.Peilingen"
     },
     "cordova-plugin-device": {
@@ -22,17 +23,16 @@
     "cordova-plugin-extension": {
       "PACKAGE_NAME": "com.EchoSierraStudio.Peilingen"
     },
-    "cordova-plugin-admobpro": {
-      "PLAY_SERVICES_VERSION": "16.0.0",
+    "cordova-plugin-headercolor": {
       "PACKAGE_NAME": "com.EchoSierraStudio.Peilingen"
     },
-    "cordova-plugin-headercolor": {
+    "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.EchoSierraStudio.Peilingen"
     },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.EchoSierraStudio.Peilingen"
     },
-    "cordova-plugin-splashscreen": {
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.EchoSierraStudio.Peilingen"
     }
   },

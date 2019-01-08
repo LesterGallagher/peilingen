@@ -110,7 +110,7 @@ function initDonutPageSeats(event) {
                 plugins: [
                     Chartist.plugins.fillDonut({
                         items: [{
-                            content: '<h2>Seats</h2>' // localization
+                            content: '<h2>' + _('Seats') + '</h2>' // localization
                         }]
                     })
                 ]

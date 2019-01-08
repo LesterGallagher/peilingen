@@ -1,6 +1,6 @@
 <ons-page id="splitter">
     <ons-splitter>
-        <ons-splitter-side id="menu" side="left" width="300px" collapse swipeable>
+        <ons-splitter-side id="menu" side="left" width="260px" collapse swipeable>
             <ons-page>
                 <ons-list>
                     <ons-list-item class="menu-banner">
@@ -8,7 +8,7 @@
                             <img src="images/logo.png">
                         </figure>
                         <h3 class="localization">Dutch House of Representatives Polls</h3>
-                        <p><span class="localization">Last updated</span> <span class="timeago"></span> <span class="localization">ago</span></p>
+                        <p><span class="localization">Last updated</span> <span class="timeago"></span></p>
                     </ons-list-item>
                     <ons-list-item onclick="fn.load('views/latest.html')" tappable>
                         <ons-icon icon="md-chart"></ons-icon>&nbsp; <span class="localization">Latest polls</span> 
@@ -27,9 +27,9 @@
                         <ons-icon icon="fa-line-chart"></ons-icon>&nbsp; <span class="localization">Since</span>&nbsp;<span id="splitterTrendAll"></span>
                     </ons-list-item>
                     <ons-list-header>Other</ons-list-header>
-                    <ons-list-item onclick="fn.load('views/about.html')" tappable>
+                    <!-- <ons-list-item onclick="fn.load('views/about.html')" tappable>
                         <ons-icon icon="md-settings"></ons-icon>&nbsp; Settings
-                    </ons-list-item>
+                    </ons-list-item> -->
                     <ons-list-item onclick="fn.load('views/about.html')" tappable>
                         <ons-icon icon="md-help"></ons-icon>&nbsp; <span class="localization">About</span>
                     </ons-list-item>

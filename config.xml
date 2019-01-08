@@ -2,6 +2,7 @@
 <widget id="com.EchoSierraStudio.Peilingen" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Peilingen</name>
     <description>
+        Met de peilingen app kun je gedetailleerde peilingen bekijken van de Tweede Kamer van I&amp;O Research, Ipsos/EenVandaag, Kantar Public en Peil.nl. De data komt van peilingwijzer.tomlouwerse.nl
     </description>
     <author email="contact@esstudio.site" href="https://esstudio.site/">
         Sem Postma
@@ -14,7 +15,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <preference name="StatusBarBackgroundColor" value="#f22f0d" />
+    <preference name="StatusBarBackgroundColor" value="#61bfaf" />
     <preference name="webviewbounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <platform name="android">
@@ -31,7 +32,7 @@
         <splash density="port-xxhdpi" src="res/screen/android/splash-port-xxhdpi.png" />
         <splash density="port-xxxhdpi" src="res/screen/android/splash-port-xxxhdpi.png" />
         <allow-intent href="market:*" />
-        <preference name="HeaderColor" value="#f5593d" />
+        <preference name="HeaderColor" value="#61bfaf" />
     </platform>
     <platform name="browser">
         <preference name="SplashScreen" value="images/logo.png" />
