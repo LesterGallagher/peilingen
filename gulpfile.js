@@ -61,6 +61,7 @@ gulp.task('css', () => {
         .pipe(postcss([require('autoprefixer'), require('cssnano')({
             normalizeUrl: false
         })]))
+        .on('error', gutil.log)
         .pipe(addsrc.prepend(cssLibs))
         .on('error', gutil.log)
         .pipe(concat('style.min.css'))

@@ -2,7 +2,7 @@ function clean(str) {
     return str.toLowerCase().replace(/\W/g, "");
 }
 
-function initTrendPage (event) {
+function initTrendPage(event) {
     timespan = event.target.getAttribute('data-timespan');
 
     var trendColors = document.getElementById("legend-colors");
@@ -43,6 +43,7 @@ function initTrendPage (event) {
                 return x !== "Date";
             });
 
+
             var data = {
                 labels: steppedPercentages.map(function (x) {
                     return x.Date;
@@ -61,7 +62,7 @@ function initTrendPage (event) {
                 })
             };
 
-            return new Chartist.Line("#ct-chart", data, {
+            var chart = new Chartist.Line("#ct-chart", data, {
                 min: 0,
                 height: "600px",
                 fullWidth: true,
@@ -71,6 +72,29 @@ function initTrendPage (event) {
                     })
                 ]
             });
+
+            chart.on('draw', function (data) {
+                // If the draw event was triggered from drawing a point on the line chart
+                if (data.type === 'point') {
+                    // We are creating a new path SVG element that draws a triangle around the point coordinates
+
+                    var circle = new Chartist.Svg('line', {
+                        x1: [data.x],
+                        x2: [data.x],
+                        y1: [data.y],
+                        y2: [data.y],
+                        'ct:value': data.value.y,
+                        'ct:meta': data.meta,
+                        class: 'ct-point ct-point-click-catcher',
+                    }, 'ct-point');
+
+                    // With data.element we get the Chartist SVG wrapper and we can replace 
+                    // the original point drawn by Chartist with our newly created triangle
+                    data.group.append(circle);
+                }
+            });
+
+            return chart;
 
             function getSpanDate(timespan) {
                 var latest = percentages.slice(-1)[0].Date;

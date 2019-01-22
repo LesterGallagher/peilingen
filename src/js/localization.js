@@ -46,6 +46,10 @@ var _app_localization = {
     about: {
         nl: 'over',
         en: 'about'
+    },
+    other: {
+        nl: 'overige',
+        en: 'other'
     }
 };
 

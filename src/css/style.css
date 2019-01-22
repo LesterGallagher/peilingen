@@ -121,7 +121,8 @@ ons-search-input .search-input {
 
 .legend-table {
     table-layout: fixed;
-    width: 100%;
+    /* width: 100%; */
+    min-width: 100%;
 }
 
 .legend-table th,
@@ -161,3 +162,4 @@ ons-search-input .search-input {
     width: 70px;
     height: 70px;
 }
+

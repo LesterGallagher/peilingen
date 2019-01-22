@@ -49,7 +49,8 @@ function initDonutPage(event) {
                 plugins: [
                     Chartist.plugins.fillDonut({
                         items: [{
-                            content: '<h2>Percentages</h2>' // localization
+                            content: '<h3>Percentages</h3>', // localization
+                            offsetX: 6
                         }]
                     })
                 ]
@@ -110,7 +111,8 @@ function initDonutPageSeats(event) {
                 plugins: [
                     Chartist.plugins.fillDonut({
                         items: [{
-                            content: '<h2>' + _('Seats') + '</h2>' // localization
+                            content: '<h3>' + _('Seats') + '</h3>', // localization
+                            offsetX: 6
                         }]
                     })
                 ]
