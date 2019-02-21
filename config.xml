@@ -2,9 +2,11 @@
 <widget id="com.EchoSierraStudio.Peilingen" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Peilingen</name>
     <description>
-        Met de peilingen app kun je gedetailleerde peilingen bekijken van de Tweede Kamer van I&amp;O Research, Ipsos/EenVandaag, Kantar Public en Peil.nl. De data komt van peilingwijzer.tomlouwerse.nl
+        Met de peilingen app kun je gedetailleerde peilingen bekijken van de 
+        Tweede Kamer van I&amp;O Research, Ipsos/EenVandaag, Kantar Public en Peil.nl. 
+        De data komt van peilingwijzer.tomlouwerse.nl
     </description>
-    <author email="contact@esstudio.site" href="https://esstudio.site/">
+    <author email="contact@esstudio.site" href="https://esstudio.site">
         Sem Postma
     </author>
     <content src="index.html" />
