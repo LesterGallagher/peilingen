@@ -16,7 +16,7 @@ var _app_localization = {
         en: 'Dutch House of Representatives Polls'
     },
     'Last updated': {
-        nl: 'Laatst geüpdate ',
+        nl: 'Laatst geüpdate',
         en: 'Last updated'
     },
     'ago': {
