@@ -163,3 +163,20 @@ ons-search-input .search-input {
     height: 70px;
 }
 
+#latest-page svg.ct-chart-bar, svg.ct-chart-line{
+	overflow: visible;
+}
+#latest-page .ct-label.ct-label.ct-horizontal.ct-end {
+  position: relative;
+  justify-content: flex-end;
+  text-align: right;
+  transform-origin: 100% 0;
+  transform: translate(-100%) rotate(-45deg);
+  white-space:nowrap;
+  left: 50%;
+}
+
+.ct-chart-bar {
+    margin-bottom: 10px;
+}
+

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "keysigning": "node scripts/keystore.js",
-    "gh-pages": "git subtree push --prefix platforms/browser/www gh-pages master",
+    "gh-pages": "git subtree push --prefix platforms/browser/www origin gh-pages",
     "start": "cordova run browser -- --live-reload",
     "build-browser": "gulp transpile && cordova build browser --release && node scripts/cordova_config_relative_fix.js",
     "rollout": "npm run build-browser && git add . && git commit -m \"prod\" && git push && npm run gh-pages"
